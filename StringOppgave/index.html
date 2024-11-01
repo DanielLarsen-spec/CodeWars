@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+        let letters = "abcdefghijklmnopqrstuvwxyz ";
+        let letterArray = letters.split("");
+        let string = "The quick brown fox jumps over the lazy dog";
+        let stringArray = string.split("");
+        var stringFalse = "This is not a pangram."
+        function isPangram(string){
+          for(let i = 0; i < stringArray.length; i++){
+        
+              if(string.includes(letterArray[i])){
+                  
+                  return true;
+                  
+                  
+                }else if(!stringFalse.includes(letterArray[i])){
+                     
+                    return false;
+                }
+            }
+        }
+        
+        /*function isPangramUsingEvery(str) {
+            const letters = "abcdefghijklmnopqrstuvwxyz";
+            const lowerStr = str.toLowerCase();
+        
+            return letters.split('').every(char => lowerStr.includes(char));
+        }
+        
+        const str1 = "The quick brown fox jumps over the lazy dog";
+        const str2 = "Hello, World!";
+        
+        console.log(The string "${str1}" is 
+        ${isPangramUsingEvery(str1) ? 'a pangram' : 'not a pangram'}.);
+        console.log(The string "${str2}" is 
+        ${isPangramUsingEvery(str2) ? 'a pangram' : 'not a pangram'}.);*/
+        </script>
+</body>
+</html>
